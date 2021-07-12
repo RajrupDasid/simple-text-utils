@@ -20,7 +20,7 @@ def analyze(request):
     nlr=request.GET.get('nlr','off')
     sr=request.GET.get('sr','off')
     analyzed=""
-    punctuations='''!#@$!^$3#&# * # @( ) @ * ) @ ! * ^ $ ^ $ % @{ } [ ] " " ' ' : ; . / ? > ? < ,  '''
+    punctuations=''' _ - + = !#@$!^$3#&# * # @( ) @ * ) @ ! * ^ $ ^ $ % @{ } [ ] " " ' ' : ; . / ? > ? < ,  '''
     if rp=='on':
         for char in new:
             if char not in punctuations:
