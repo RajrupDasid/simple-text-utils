@@ -8,10 +8,10 @@ def index(request):
         'name':name,
         'type':type,
     }  
-    return render (request,'i2.html',context)
+    return render (request,'index.html',context)
 
 def about(request):
-    return HttpResponse("THis is about page")
+    return HttpResponse("This is about page")
 def analyze(request):
     new=request.GET.get('text','default')
     rp=request.GET.get('removepunc','off')
