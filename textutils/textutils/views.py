@@ -8,7 +8,7 @@ def index(request):
         'name':name,
         'type':type,
     }  
-    return render (request,'index.html',context)
+    return render (request,'i2.html',context)
 
 def about(request):
     return HttpResponse("THis is about page")
